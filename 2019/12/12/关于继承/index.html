@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>关于继承 | zhengtongxue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="对象的组合优于类的继承 类之间合理使用继承，适当时候可以使用对象的组合来代替类的继承。 当一个对象的行为有明显的类别之分时，继承是一种很自然的表达方式。 实现过程中，将可以共用的数据和行为都放在超类中，各个子类再根据需要重写覆盖部分特性。 子类为数据结构的多样性和行为的多态化提供了很好的支持，是针对差异性编程的好工具。 一旦使用了继承，那么父类和子类之间就有了紧密联系，特别是当父类发生修改时会影响">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于继承">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengtongxue2019.github.io&#x2F;2019&#x2F;12&#x2F;12&#x2F;%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF&#x2F;index.html">
+<meta property="og:site_name" content="zhengtongxue">
+<meta property="og:description" content="对象的组合优于类的继承 类之间合理使用继承，适当时候可以使用对象的组合来代替类的继承。 当一个对象的行为有明显的类别之分时，继承是一种很自然的表达方式。 实现过程中，将可以共用的数据和行为都放在超类中，各个子类再根据需要重写覆盖部分特性。 子类为数据结构的多样性和行为的多态化提供了很好的支持，是针对差异性编程的好工具。 一旦使用了继承，那么父类和子类之间就有了紧密联系，特别是当父类发生修改时会影响">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-12T09:08:29.902Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="zhengtongxue" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">zhengtongxue</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录一个想上位的小三的伪奋斗史</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhengtongxue2019.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-关于继承" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/" class="article-date">
+  <time datetime="2019-12-12T07:25:20.000Z" itemprop="datePublished">2019-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于继承
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>对象的组合优于类的继承</strong></p>
+<p>类之间合理使用继承，适当时候可以使用对象的组合来代替类的继承。</p>
+<p>当一个对象的行为有明显的类别之分时，继承是一种很自然的表达方式。</p>
+<p>实现过程中，将可以共用的数据和行为都放在超类中，各个子类再根据需要重写覆盖部分特性。</p>
+<p>子类为数据结构的多样性和行为的多态化提供了很好的支持，是针对差异性编程的好工具。</p>
+<p>一旦使用了继承，那么父类和子类之间就有了紧密联系，特别是当父类发生修改时会影响所有的子类。</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>子类通过继承的方式来获得超类的所有功能。</p>
+<h2 id="继承的2个判定要点"><a href="#继承的2个判定要点" class="headerlink" title="继承的2个判定要点"></a>继承的2个判定要点</h2><p>子类必须可以适用超类的所有函数。<br>子类的所有实例必须都是超类的实例，都可以通过超类的接口来使用子类的实例。</p>
+<a id="more"></a>
+
+<h2 id="典型的错误例子"><a href="#典型的错误例子" class="headerlink" title="典型的错误例子"></a>典型的错误例子</h2><ul>
+<li>Stack extends List 栈继承于列表</li>
+</ul>
+<blockquote>
+<p>栈只是想复用列表的数据存储和操作能力<br>列表提供的所有操作都会出现在栈上，但是大部分操作却并不适合栈。<br>改进策略：将列表作为栈的内部成员，将栈需要的操作转移到列表上，而非直接继承。<br>宿主类是原来的子类，委托类是原来的超类，在子类中将对应的操作转发给委托类去执行即可。</p>
+</blockquote>
+<h2 id="典型的有效例子"><a href="#典型的有效例子" class="headerlink" title="典型的有效例子"></a>典型的有效例子</h2><ul>
+<li>设计模式中State状态模式和Strategy策略模式</li>
+</ul>
+<blockquote>
+<p>两种设计模式都是将本该由宿主对象的子类来处理的事情转发给其他对象来取代原来的继承。<br>更为优雅地将switch或if进行了转换。</p>
+</blockquote>
+<p>更好地抽象了 共同点和变化点，保留共同点，抽象变化点。</p>
+<p>对修改关闭，对扩展开放。</p>
+<p>Replace Subclass with Field &amp;&amp; Replace Field with subclass</p>
+<p>超类的工厂函数 有很好的作用。</p>
+<p>为每个构造函数分别创建一个工厂函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function createPerson(name)&#123;</span><br><span class="line">    return new Person(name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function createMale(name)&#123;</span><br><span class="line">    return new Male(name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function createFemale(name)&#123;</span><br><span class="line">    return new Female(name)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="SOLID"><a href="#SOLID" class="headerlink" title="SOLID"></a>SOLID</h2><ul>
+<li>单一职责</li>
+<li>开放封闭职责</li>
+<li>里式替换职责</li>
+<li>依赖倒置职责</li>
+<li>接口隔离职责</li>
+</ul>
+<p>抽象类 &amp; 接口</p>
+<p>继承 &amp; 组合</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhengtongxue2019.github.io/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/" data-id="ck42i5of900064gu60hej8tbg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">读重构时的笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/">关于继承</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/">读重构时的笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/">git使用小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/">关于使用nodejs的小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/">TDD的一点点</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Zheng tongxue<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

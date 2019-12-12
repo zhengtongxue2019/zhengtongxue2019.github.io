@@ -5,15 +5,16 @@
   
 
   
-  <title>Archives: 2019 | zhengtongxue</title>
+  <title>读重构时的笔记 | zhengtongxue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小三如何才能上位">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhengtongxue">
-<meta property="og:url" content="https:&#x2F;&#x2F;zhengtongxue2019.github.io&#x2F;archives&#x2F;2019&#x2F;index.html">
+  <meta name="description" content="以上是摘要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读重构时的笔记">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengtongxue2019.github.io&#x2F;2019&#x2F;12&#x2F;05&#x2F;%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="zhengtongxue">
-<meta property="og:description" content="小三如何才能上位">
+<meta property="og:description" content="以上是摘要">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-05T12:06:24.325Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="zhengtongxue" type="application/atom+xml">
@@ -65,121 +66,80 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/" class="archive-article-date">
-  <time datetime="2019-12-12T07:25:20.000Z" itemprop="datePublished">Dec 12</time>
+        <section id="main"><article id="post-读重构时的笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2019-12-05T11:50:57.000Z" itemprop="datePublished">2019-12-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/">关于继承</a>
+    <h1 class="article-title" itemprop="name">
+      读重构时的笔记
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2019-12-05T11:50:57.000Z" itemprop="datePublished">Dec 5</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/">读重构时的笔记</a>
-    </h1>
-  
+        <h2 id="以上是摘要"><a href="#以上是摘要" class="headerlink" title="以上是摘要"></a>以上是摘要</h2><a id="more"></a>
+<h2 id="以下是正文"><a href="#以下是正文" class="headerlink" title="以下是正文"></a>以下是正文</h2><h2 id="什么时候需要重构"><a href="#什么时候需要重构" class="headerlink" title="什么时候需要重构"></a>什么时候需要重构</h2><ul>
+<li>需要新增特性时</li>
+<li>修改bug时</li>
+</ul>
+<h2 id="从哪里出发"><a href="#从哪里出发" class="headerlink" title="从哪里出发"></a>从哪里出发</h2><ul>
+<li>重复的代码</li>
+<li>大型的函数</li>
+<li>超大的类</li>
+<li>好长好长的参数</li>
+</ul>
+<h2 id="常见技法"><a href="#常见技法" class="headerlink" title="常见技法"></a>常见技法</h2><p>向上：提取抽象类或接口<br>向下：迁移子类<br>向左：提取到其他的类<br>向右：加入中间隔离类</p>
+<h2 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h2><ul>
+<li>有胜于无</li>
+<li>不要求面面俱到</li>
+<li>优先覆盖可能出现错误的地方</li>
+<li>从业务角度出发编写</li>
+<li>别忘记边界</li>
+<li>别忘记了空</li>
+</ul>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2019-11-27T03:26:37.000Z" itemprop="datePublished">Nov 27</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/">git使用小记</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2019-11-26T02:32:34.000Z" itemprop="datePublished">Nov 26</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhengtongxue2019.github.io/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/" data-id="ck42i5of800054gu6a3hq136t" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/">关于使用nodejs的小记</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/" class="archive-article-date">
-  <time datetime="2019-11-20T03:08:24.000Z" itemprop="datePublished">Nov 20</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/">TDD的一点点</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
-</article>
   
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2019/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/page/2/">Next &amp;raquo;</a>
-  </nav>
+<nav id="article-nav">
+  
+    <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          关于继承
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">git使用小记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

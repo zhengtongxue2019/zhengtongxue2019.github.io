@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>TDD的一点点 | zhengtongxue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="以上是摘要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TDD的一点点">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengtongxue2019.github.io&#x2F;2019&#x2F;11&#x2F;20&#x2F;TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9&#x2F;index.html">
+<meta property="og:site_name" content="zhengtongxue">
+<meta property="og:description" content="以上是摘要">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-20T03:43:53.932Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="zhengtongxue" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">zhengtongxue</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录一个想上位的小三的伪奋斗史</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhengtongxue2019.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-TDD的一点点" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/" class="article-date">
+  <time datetime="2019-11-20T03:08:24.000Z" itemprop="datePublished">2019-11-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      TDD的一点点
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="以上是摘要"><a href="#以上是摘要" class="headerlink" title="以上是摘要"></a>以上是摘要</h2><a id="more"></a>
+<h2 id="以下是正文"><a href="#以下是正文" class="headerlink" title="以下是正文"></a>以下是正文</h2><h2 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h2><blockquote>
+<p>大的驱动：测试开发用例驱动测试开发代码来反向驱动出生产代码。<br>小的驱动：测试用例中通过先写Assert来反向驱动出Act和Arrange两步的代码。</p>
+</blockquote>
+<blockquote>
+<p>Arrange准备工作=》Act实际操作=》Assert判断结果</p>
+</blockquote>
+<h2 id="消除重复"><a href="#消除重复" class="headerlink" title="消除重复"></a>消除重复</h2><p>不仅仅局限于在生产代码中消除重复，测试代码出现的重复代码也需要一并消除。</p>
+<h2 id="测试用例的划分-等价类划分"><a href="#测试用例的划分-等价类划分" class="headerlink" title="测试用例的划分-等价类划分"></a>测试用例的划分-等价类划分</h2><p>等价类划分是解决如何选择适当的数据子集来代表整个数据集的问题，</p>
+<p>通过降低测试的数目去实现“合理的”覆盖，覆盖了更多的可能数据，以发现更多的软件缺陷。</p>
+<p>通过等价类的划分之后，设计出一个正确的测试用例来覆盖尽量大的测试范围。</p>
+<p>错误的测试用例一次只覆盖一个测试范围。</p>
+<h2 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h2><p><code>mock and stub are fake.</code></p>
+<ul>
+<li><p><strong>单元测试</strong>指的是针对功能进行测试，而非针对文件系统、数据库系统以及网络通信等进行测试。</p>
+</li>
+<li><p>针对涉及文件系统、数据库系统以及网络通信等进行的测试是<strong>集成测试</strong>。</p>
+</li>
+<li><p>当单元测试中的代码涉及文件系统、数据库系统以及网络通信时，重构时需要对其进行解耦。</p>
+</li>
+<li><p>当单元测试中的代码直接依赖第三方库时，重构时需要对其进行解耦。</p>
+</li>
+<li><p>当需要重构的代码中出现强依赖时，特别是针对的是代码中针对具体的实现而非接口进行的编码时，重构时需要先对其进行解耦。</p>
+</li>
+<li><p>当需要重构的代码中出现不可控的输入时，重构时需要先对其进行解耦。</p>
+</li>
+</ul>
+<p>解耦的方式主要由2种<br>1、将其接口化，然后从该接口上派生一个专门用于测试时使用的新子类。<br>2、将其父类化，然后从该父类上派生一个专门用于测试时使用的新子类。<br>3、涉及第三方类时，建议将其封装到一个过渡类中进行解耦。</p>
+<p>将依赖的对象通过类的构造函数或属性等方式注入进去。</p>
+<h2 id="User-Storyboard"><a href="#User-Storyboard" class="headerlink" title="User Storyboard"></a>User Storyboard</h2><p>作为一位 《角色》， 我想《实现目标/拥有愿望》 来 《获得收益》</p>
+<p><code>As a 《role》， I want 《goal/desire》 so that 《benefit》</code></p>
+<h3 id="卡片"><a href="#卡片" class="headerlink" title="卡片"></a>卡片</h3><blockquote>
+<p>正面 user story name<br>背面 more detail info</p>
+</blockquote>
+<h2 id="领域模型"><a href="#领域模型" class="headerlink" title="领域模型"></a>领域模型</h2><h3 id="领域模型是什么"><a href="#领域模型是什么" class="headerlink" title="领域模型是什么"></a>领域模型是什么</h3><p>领域模型 定义 “系统能够做什么” 这样的功能需求，重在解决沟通误解的问题。</p>
+<p>它关注项目中所有概念的准确性，需要建立描述问题领域的通用词汇表，通过增强概念的准确性来消除因概念理解不一致导致的误解。</p>
+<p>这个词汇表会随着项目的进展，不断地完善和更新。</p>
+<p>设计领域模型的第一步是找出领域类，然后是画出领域模型类图。</p>
+<p>一般来讲是从需求列表中找出一些重要的<strong>名词</strong>来作为初步的领域类，后续再继续调整。</p>
+<h2 id="Git的一点细节"><a href="#Git的一点细节" class="headerlink" title="Git的一点细节"></a>Git的一点细节</h2><h3 id="Comment-Message提交注释"><a href="#Comment-Message提交注释" class="headerlink" title="Comment Message提交注释"></a>Comment Message提交注释</h3><p>在Git中提交代码时都应该写Comment Message提交注释。</p>
+<p>每次少量且意图描述清晰的代码提交，</p>
+<p>不仅能增强将来阅读代码变动历史的可读性，</p>
+<p>还能在代码写错需要回退时能做到更精细的回退。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhengtongxue2019.github.io/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/" data-id="ck42i5oej00004gu66bgw20a6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          关于使用nodejs的小记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/19/%E5%85%B3%E4%BA%8Ecsharp%E6%B3%A8%E8%A7%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">关于csharp注解</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/">关于继承</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/">读重构时的笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/">git使用小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/">关于使用nodejs的小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/">TDD的一点点</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Zheng tongxue<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

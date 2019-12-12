@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>关于csharp注解 | zhengtongxue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="特性Attribute特性Attribute 是用于在运行时传递程序中各种元素，如类、方法、结构、枚举、组件等的行为信息的声明性标签。可以通过特性向程序添加声明性信息。一个声明性标签是通过放置在它所应用的元素前面的方括号[]中来描述。 特性Attribute 用于添加元数据，如编译器指令和注释、描述、方法、类等其他信息。.NET提供两种类型的特性：预定义特性和自定义特性。  特性Attribute">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于csharp注解">
+<meta property="og:url" content="https:&#x2F;&#x2F;zhengtongxue2019.github.io&#x2F;2019&#x2F;11&#x2F;19&#x2F;%E5%85%B3%E4%BA%8Ecsharp%E6%B3%A8%E8%A7%A3&#x2F;index.html">
+<meta property="og:site_name" content="zhengtongxue">
+<meta property="og:description" content="特性Attribute特性Attribute 是用于在运行时传递程序中各种元素，如类、方法、结构、枚举、组件等的行为信息的声明性标签。可以通过特性向程序添加声明性信息。一个声明性标签是通过放置在它所应用的元素前面的方括号[]中来描述。 特性Attribute 用于添加元数据，如编译器指令和注释、描述、方法、类等其他信息。.NET提供两种类型的特性：预定义特性和自定义特性。  特性Attribute">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-21T05:57:54.557Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="zhengtongxue" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">zhengtongxue</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">记录一个想上位的小三的伪奋斗史</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhengtongxue2019.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-关于csharp注解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/19/%E5%85%B3%E4%BA%8Ecsharp%E6%B3%A8%E8%A7%A3/" class="article-date">
+  <time datetime="2019-11-19T09:03:12.000Z" itemprop="datePublished">2019-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于csharp注解
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="特性Attribute"><a href="#特性Attribute" class="headerlink" title="特性Attribute"></a>特性Attribute</h2><p>特性Attribute 是用于在运行时传递程序中各种元素，如类、方法、结构、枚举、组件等的行为信息的声明性标签。<br>可以通过特性向程序添加声明性信息。<br>一个声明性标签是通过放置在它所应用的元素前面的方括号[]中来描述。</p>
+<p>特性Attribute 用于添加元数据，如编译器指令和注释、描述、方法、类等其他信息。<br>.NET提供两种类型的特性：预定义特性和自定义特性。 </p>
+<p>特性Attribute就是一种“附着物”——就像牡蛎吸附在船底或礁石上一样。<br>这些附着物的作用是为它们的附着体追加上一些额外的信息。</p>
+<p>特性Attribute的作用是为元数据添加内容。<br>元数据可以被工具支持，比如：编译器用元数据来辅助编译，调试器用元数据来调试程序。</p>
+<p>一般来讲，Attribute大部分用在框架设计与组件设计中，通过Attribute机制将业务代码与权限代码很好的分离开发，代码更简洁，可理解性更强。</p>
+<a id="more"></a>
+<h2 id="预定义特性"><a href="#预定义特性" class="headerlink" title="预定义特性"></a>预定义特性</h2><p>.NET提供了三种预定义特性：</p>
+<ul>
+<li><p>AttributeUsage 描述了如何使用一个自定义特性类。它规定了特性可应用到的项目的类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[AttributeUsage(</span><br><span class="line">   validon,//参数 validon 规定特性可被放置的语言元素。它是枚举器 AttributeTargets 的值的组合。默认值是 AttributeTargets.All。</span><br><span class="line">   AllowMultiple=allowmultiple,//参数 allowmultiple（可选的）为该特性的 AllowMultiple 属性（property）提供一个布尔值。如果为 true，则该特性是多用的。默认值是 false（单用的）。</span><br><span class="line">   Inherited=inherited//参数 inherited（可选的）为该特性的 Inherited 属性（property）提供一个布尔值。如果为 true，则该特性可被派生类继承。默认值是 false（不被继承）。</span><br><span class="line">)]</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[AttributeUsage(AttributeTargets.Class |</span><br><span class="line">AttributeTargets.Constructor |</span><br><span class="line">AttributeTargets.Field |</span><br><span class="line">AttributeTargets.Method |</span><br><span class="line">AttributeTargets.Property, </span><br><span class="line">AllowMultiple = true)]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Conditional 标记了一个条件方法，其执行依赖于指定的预处理标识符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Conditional(</span><br><span class="line">   conditionalSymbol</span><br><span class="line">)]</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Conditional(&quot;DEBUG&quot;)]</span><br><span class="line">public static void Message(string msg)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Obsolete 标记了不应被使用的程序实体。它可以让您通知编译器丢弃某个特定的目标元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[Obsolete(</span><br><span class="line">   message,//参数 message，是一个字符串，描述项目为什么过时以及该替代使用什么。</span><br><span class="line">   iserror //参数 iserror，是一个布尔值。如果该值为 true，编译器应把该项目的使用当作一个错误。默认值是 false（编译器生成一个警告）。</span><br><span class="line">)]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[Obsolete(&quot;Don&apos;t use OldMethod, use NewMethod instead&quot;, true)]</span><br><span class="line">static void OldMethod()</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用自定义的注解Attribute"><a href="#使用自定义的注解Attribute" class="headerlink" title="使用自定义的注解Attribute"></a>使用自定义的注解Attribute</h2><p>.Net 框架允许创建自定义特性，用于存储声明性的信息，且可在运行时被检索。该信息根据设计标准和应用程序需要，可与任何目标元素相关。</p>
+<p>创建并使用自定义特性包含四个步骤：<br>1、声明自定义特性<br>2、构建自定义特性<br>3、在目标程序元素上应用自定义特性<br>4、通过反射访问特性<br>最后一个步骤包含编写一个简单的程序来读取元数据以便查找各种符号。元数据是用于描述其他数据的数据和信息。该程序应使用反射来在运行时访问特性。</p>
+<h2 id="自定义Attribute的示例"><a href="#自定义Attribute的示例" class="headerlink" title="自定义Attribute的示例"></a>自定义Attribute的示例</h2><h3 id="在目标程序元素上应用自定义特性"><a href="#在目标程序元素上应用自定义特性" class="headerlink" title="在目标程序元素上应用自定义特性"></a>在目标程序元素上应用自定义特性</h3><p>//注解 模块化<br>namespace CustomPlugin<br>{<br>    [Module(ModuleName = “CustomPlugin”, OnDemand = true)]<br>    public class CustomPlugin : IModule<br>    {<br>    }<br>}</p>
+<h3 id="自定义特性-amp-构建自定义特性"><a href="#自定义特性-amp-构建自定义特性" class="headerlink" title="自定义特性&amp;构建自定义特性"></a>自定义特性&amp;构建自定义特性</h3><p>//注解，描述注解可以用来修饰哪些，声明可以用来修饰类，不支持AllowMultiple<br>using System;<br>namespace Tomato.Modularity<br>{<br>    //声明自定义特性<br>    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]<br>    public sealed class ModuleAttribute : Attribute<br>    {<br>    //构建自定义特性<br>        public ModuleAttribute();</p>
+<pre><code>    public string ModuleName { get; set; }
+    public bool OnDemand { get; set; }
+}</code></pre><p>}</p>
+<h2 id="通过反射获得特性"><a href="#通过反射获得特性" class="headerlink" title="通过反射获得特性"></a>通过反射获得特性</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.Reflection.MemberInfo info = typeof(MyClass);</span><br><span class="line">object[] attributes = info.GetCustomAttributes(true);</span><br></pre></td></tr></table></figure>
+
+<p>来自张逸的<a href="https://www.cnblogs.com/wayfarer/articles/256909.html" target="_blank" rel="noopener">.Net平台AOP技术研究</a>，有深度需要多看看。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">System.Reflection.MemberInfo info = typeof(Bar);</span><br><span class="line">CallTracingAttribute attribute = (CallTracingAttribute) Attribute.GetCustomAttribute(info,typeof(CallTracingAttribute));</span><br><span class="line">if (attribute != null)</span><br><span class="line">&#123;</span><br><span class="line">	 Console.WriteLine(“Tracing Information:&#123;0&#125;”,attribute.TracingInfo);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="依赖的系统提供的注解"><a href="#依赖的系统提供的注解" class="headerlink" title="依赖的系统提供的注解"></a>依赖的系统提供的注解</h2><h3 id="AttributeUsageAttribute"><a href="#AttributeUsageAttribute" class="headerlink" title="AttributeUsageAttribute"></a>AttributeUsageAttribute</h3><p>//注解，描述注解可以用来修饰哪些，声明可以用来修饰类，ComVisible可见<br>using System.Runtime.InteropServices;<br>namespace System<br>{<br>    [AttributeUsage(AttributeTargets.Class)]<br>    [ComVisible(true)]<br>    public sealed class AttributeUsageAttribute : Attribute<br>    {<br>        public AttributeUsageAttribute(AttributeTargets validOn);</p>
+<pre><code>    public bool AllowMultiple { get; set; }
+    public bool Inherited { get; set; }
+    public AttributeTargets ValidOn { get; }
+}</code></pre><p>}</p>
+<h3 id="ComVisibleAttribute"><a href="#ComVisibleAttribute" class="headerlink" title="ComVisibleAttribute"></a>ComVisibleAttribute</h3><p>//注解，描述注解可以用来修饰哪些，声明可以用来修饰这些类型，不支持Inherited，ComVisible可见<br>namespace System.Runtime.InteropServices<br>{<br>    [AttributeUsage(AttributeTargets.Assembly | AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Interface | AttributeTargets.Delegate, Inherited = false)]<br>    [ComVisible(true)]<br>    public sealed class ComVisibleAttribute : Attribute<br>    {<br>        public ComVisibleAttribute(bool visibility);</p>
+<pre><code>    public bool Value { get; }
+}</code></pre><p>}</p>
+<h3 id="AttributeTargets"><a href="#AttributeTargets" class="headerlink" title="AttributeTargets"></a>AttributeTargets</h3><p>//注解，描述注解可以用来修饰哪些，声明可以用来表示ComVisible可见，支持Flags<br>using System.Runtime.InteropServices;<br>namespace System<br>{<br>    [ComVisible(true)]<br>    [Flags]<br>    public enum AttributeTargets<br>    {<br>        Assembly = 1,<br>        Module = 2,<br>        Class = 4,<br>        Struct = 8,<br>        Enum = 16,<br>        Constructor = 32,<br>        Method = 64,<br>        Property = 128,<br>        Field = 256,<br>        Event = 512,<br>        Interface = 1024,<br>        Parameter = 2048,<br>        Delegate = 4096,<br>        ReturnValue = 8192,<br>        GenericParameter = 16384,<br>        All = 32767<br>    }<br>}</p>
+<h3 id="FlagsAttribute"><a href="#FlagsAttribute" class="headerlink" title="FlagsAttribute"></a>FlagsAttribute</h3><p>//注解，描述注解可以用来修饰哪些，声明可以用来修饰枚举，不支持Inherited，ComVisible可见<br>using System.Runtime.InteropServices;<br>namespace System<br>{<br>    [AttributeUsage(AttributeTargets.Enum, Inherited = false)]<br>    [ComVisible(true)]<br>    public class FlagsAttribute : Attribute<br>    {<br>        public FlagsAttribute();<br>    }<br>}</p>
+<h2 id="关于AOP"><a href="#关于AOP" class="headerlink" title="关于AOP"></a>关于AOP</h2><p>AOP中的动态代理就是利用Attribute实现的，所以要想搞清楚动态代理，先要弄明白Attribute。</p>
+<ul>
+<li>参见<a href="https://www.cnblogs.com/wayfarer/articles/241024.html" target="_blank" rel="noopener">AOP技术基础</a></li>
+<li>参见<a href="https://blog.51cto.com/liutiemeng/29201" target="_blank" rel="noopener">深入浅出Attribute （上）——Attribute初体验</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhengtongxue2019.github.io/2019/11/19/%E5%85%B3%E4%BA%8Ecsharp%E6%B3%A8%E8%A7%A3/" data-id="ck42i5of400034gu65a81avq6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          TDD的一点点
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/19/hexo%E7%9A%84%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo的基础使用</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/12/%E5%85%B3%E4%BA%8E%E7%BB%A7%E6%89%BF/">关于继承</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/05/%E8%AF%BB%E9%87%8D%E6%9E%84%E6%97%B6%E7%9A%84%E7%AC%94%E8%AE%B0/">读重构时的笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/27/git%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/">git使用小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8nodejs%E7%9A%84%E5%B0%8F%E8%AE%B0/">关于使用nodejs的小记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/20/TDD%E7%9A%84%E4%B8%80%E7%82%B9%E7%82%B9/">TDD的一点点</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Zheng tongxue<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
