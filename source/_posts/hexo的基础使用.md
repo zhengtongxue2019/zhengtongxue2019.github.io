@@ -53,7 +53,7 @@ Markdown和HTML文件会被解析并放到public文件夹，其他文件也会�
 ## 更换主题
 到hexo生成的应用程序目录
 使用`git clone xxxTheme.git themes/xxxTheme`下载指定的主题到当前指定的主题目录下
-修改_config.xml中的theme为对应的主题名称xxxTheme即可
+修改`_config.xml`中的theme为对应的主题名称xxxTheme即可
 
 ## hexo的管理
 在hexo生成的应用程序文件夹中执行以下命令
@@ -66,6 +66,14 @@ Markdown和HTML文件会被解析并放到public文件夹，其他文件也会�
 以下操作在github上执行
 
 ## 写文章时的注意事项
-标签tags 支持多标签，如[tag1, tag2, tag3]，需要注意标签后面的，后面有空格进行分割。
+* 标签tags 支持多标签，如[tag1, tag2, tag3]，需要注意标签后面的，后面有空格进行分割。
+* 文章中的图片，如果图片少的话，可以直接将图片放到source/images文件夹中，然后在文章中通过`![](/images/xxx.jpg)`来引用。
+* 启用**文章资源文件夹**：文章中的图片，如果图片多的话，需要修改`_config.xml`中的`post_asset_folder: false`为`true`，这样的话，每次新建文章时会自动创建一个同名文件夹，你可以将图片资源放到这里再进行引用。
+* 正确引用文章资源文件夹中的图片或资源是使用以下语法，这样才能正确地出现在首页、归档等页面上，同时在文章中也是正确的引用。
+```
+{% asset_path slug %}
+{% asset_img slug [title] %} 如 {% asset_img example.jpg 这是图片引用的实例说明 %}
+{% asset_link slug [title] %} 
+```
 
 7、在github上新建一个同用户名相同的项目，不要初始化任何东西。
